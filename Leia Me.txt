@@ -1,0 +1,19 @@
+Além da implementação que vamos usar (o ChromeDriver, disponível no pacote https://www.nuget.org/packages/Selenium.Chrome.WebDriver), temos também outras implementações para os seguintes navegadores:
+
+Firefox
+https://www.nuget.org/packages/Selenium.Firefox.WebDriver/
+
+Edge
+https://www.nuget.org/packages/Selenium.WebDriver.MicrosoftDriver/
+
+Opera
+https://www.nuget.org/packages/Selenium.Opera.WebDriver/
+
+Internet Explorer
+https://www.nuget.org/packages/Selenium.InternetExplorer.WebDriver/
+
+Página Oficial do Selenium WebDriver https://www.seleniumhq.org/projects/webdriver/
+
+API .NET do Selenium WebDriver https://seleniumhq.github.io/selenium/docs/api/dotnet/
+
+Martin Fowler sobre a Pirâmide de Testes https://martinfowler.com/bliki/TestPyramid.html
