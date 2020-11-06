@@ -6,7 +6,7 @@ using Alura.LeilaoOnline.Selenium.Fixtures;
 using Microsoft.VisualStudio.TestPlatform.Common.Telemetry;
 using OpenQA.Selenium;
 using Xunit;
-
+using Xunit.Sdk;
 
 namespace Alura.LeilaoOnline.Selenium.Testes
 {
@@ -98,5 +98,47 @@ namespace Alura.LeilaoOnline.Selenium.Testes
 
         }
 
+        [Fact]
+        public void DadoNomeEmBrancoDeveMostrarMensagemErro()
+        {
+            //arrange
+            //arrage - dado chrome aberto, pagina inicial do sist. de leiloes, 
+            // dados de registros validos informados
+            driver.Navigate().GoToUrl("http://localhost:5000/");
+
+            //botao registro 
+            var botaoRegistro = driver.FindElement(By.Id("btnRegistro"));
+
+            //act 
+            botaoRegistro.Click();
+
+            //assert 
+            IWebElement elemento = driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for='Nome']"));
+            Assert.True(elemento.Displayed);
+        }
+
+        [Fact]
+        public void DadoEmailInvalidoDeveMostrarMensagemErro()
+        {
+            //arrange
+            //arrage - dado chrome aberto, pagina inicial do sist. de leiloes, 
+            // dados de registros validos informados
+            driver.Navigate().GoToUrl("http://localhost:5000/");
+
+            //Email 
+            var inputEmail = driver.FindElement(By.Id("Email"));
+
+            inputEmail.SendKeys("willfmagagmail.com");
+
+            //botao registro 
+            var botaoRegistro = driver.FindElement(By.Id("btnRegistro"));
+
+            //act 
+            botaoRegistro.Click();
+
+            //assert 
+            IWebElement elemento = driver.FindElement(By.CssSelector("span.msg-erro[data-valmsg-for='Email']"));
+            Assert.True(elemento.Displayed);
+        }
     }
 }
