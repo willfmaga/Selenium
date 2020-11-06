@@ -18,12 +18,6 @@ API .NET do Selenium WebDriver https://seleniumhq.github.io/selenium/docs/api/do
 
 Martin Fowler sobre a Pirâmide de Testes https://martinfowler.com/bliki/TestPyramid.html
 
+https://xunit.net/docs/comparisons
 
-Guia sobre nomenclatura de testes da MS
-https://docs.microsoft.com/pt-br/dotnet/standard/modern-web-apps-azure-architecture/test-asp-net-core-mvc-apps#test-naming
-
-Comparação entre frameworks de testes (veja especialmente a prática Setup/TearDown)
-https://xunit.net/docs/comparisons#attributes
-
-Artigo do xUnit sobre compartilhamento de recursos
-https://xunit.net/docs/shared-context.html
+https://seleniumhq.github.io/selenium/docs/api/dotnet/
