@@ -27,3 +27,9 @@ https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_IWe
 
 Página com API da classe By
 https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_By.htm
+
+Artigo do Martin Fowler sobre PO
+https://www.martinfowler.com/bliki/PageObject.html
+
+Próprio Selenium encoraja o uso de POs
+https://github.com/SeleniumHQ/selenium/wiki/PageObjects
