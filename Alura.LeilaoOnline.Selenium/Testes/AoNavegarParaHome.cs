@@ -5,6 +5,7 @@ using OpenQA.Selenium.Chrome;
 using System;
 using System.IO;
 using System.Reflection;
+using System.Xml.Serialization;
 using Xunit;
 
 namespace Alura.LeilaoOnline.Selenium.Testes
@@ -24,7 +25,7 @@ namespace Alura.LeilaoOnline.Selenium.Testes
         public void DadoChromeAbertoDeveMostrarLeiloesNoTitulo()
         {
             //arrange 
-          
+
             //act 
             driver.Navigate().GoToUrl("http://localhost:5000");
 
@@ -36,7 +37,7 @@ namespace Alura.LeilaoOnline.Selenium.Testes
         public void DadoChromeAbertoDeveMostrarProximosLeiloesNaPagina()
         {
             //arrange 
-          
+
             //act 
             driver.Navigate().GoToUrl("http://localhost:5000");
 
@@ -44,6 +45,25 @@ namespace Alura.LeilaoOnline.Selenium.Testes
             Assert.Contains("Leilões", driver.Title);
 
             //Assert.Contains("Próximos Leilões", driver.Title);
+        }
+
+        [Fact]
+        public void DadoChromeAbertoFormRegistroNaoDeveMostrarMensagensDeErro()
+        {
+            //arrange 
+            //vem da TesFixture
+
+            //act 
+            driver.Navigate().GoToUrl("http://localhost:5000");
+
+            //assert 
+            var form = driver.FindElement(By.TagName("form"));
+            var spans = form.FindElements(By.TagName("span"));
+
+            foreach (var span in spans)
+            {
+                Assert.True(String.IsNullOrWhiteSpace(span.Text));
+            }
         }
     }
 }

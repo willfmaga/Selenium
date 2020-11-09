@@ -21,3 +21,9 @@ Martin Fowler sobre a Pirâmide de Testes https://martinfowler.com/bliki/TestPyr
 https://xunit.net/docs/comparisons
 
 https://seleniumhq.github.io/selenium/docs/api/dotnet/
+
+Página com API da interface IWebElement
+https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_IWebElement.htm
+
+Página com API da classe By
+https://seleniumhq.github.io/selenium/docs/api/dotnet/html/T_OpenQA_Selenium_By.htm

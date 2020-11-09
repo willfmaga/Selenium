@@ -14,7 +14,7 @@ namespace Alura.LeilaoOnline.Selenium.Fixtures
         //Setup
         public TestFixture()
         {
-            Driver  = new ChromeDriver( TestHelper.PastaDoExecutavel());
+            Driver = new ChromeDriver(TestHelper.PastaDoExecutavel());
         }
 
         //TearDown
